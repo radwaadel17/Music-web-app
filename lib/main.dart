@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const Video());
+  runApp(const VideoStreaming());
 }
 
-class Video extends StatelessWidget {
-  const Video({super.key});
+class VideoStreaming extends StatelessWidget {
+  const VideoStreaming({super.key});
 
   // This widget is the root of your application.
   @override
