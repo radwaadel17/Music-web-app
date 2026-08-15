@@ -1,4 +1,4 @@
-# Video Streaming Website
+# Music Website App
 
 A modern **responsive video streaming web application** built with Flutter, designed to provide a clean and engaging browsing experience across different screen sizes.
 
