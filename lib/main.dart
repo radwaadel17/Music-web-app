@@ -1,22 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:streamingapp/HomePage/presentation/views/video-streaming-view.dart';
+import 'package:streamingapp/HomePage/presentation/views/music-streaming-view.dart';
 
 void main() {
-  runApp(const VideoStreamingWebApp());
+  runApp(const MusicWebApp());
 }
 
-class VideoStreamingWebApp extends StatelessWidget {
-  const VideoStreamingWebApp({super.key});
+class MusicWebApp extends StatelessWidget {
+  const MusicWebApp({super.key});
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
-      home: const VideoStreamingView(),
+      home: const MusicStreamingView(),
     );
-
-
   } 
-
 }

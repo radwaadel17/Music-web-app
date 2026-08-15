@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:streamingapp/utils/widgets/desktop-layout.dart';
+import 'package:streamingapp/utils/widgets/tablet-layout.dart';
 import 'package:streamingapp/widgets/adaptive-layouts.dart';
-import 'package:streamingapp/widgets/desktop-layout.dart';
 import 'package:streamingapp/widgets/mobile-layout.dart';
-import 'package:streamingapp/widgets/tablet-layout.dart';
 
-class VideoStreamingViewBody extends StatelessWidget {
-  const VideoStreamingViewBody({super.key});
+class MusicStreamingViewBody extends StatelessWidget {
+  const MusicStreamingViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
