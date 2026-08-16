@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:streamingapp/HomePage/presentation/widgets/Drawer%20Widgets/active-drawer-item-first.dart';
+import 'package:streamingapp/HomePage/presentation/widgets/Drawer%20Widgets/custom-list-tile-active-non-active.dart';
+import 'package:streamingapp/HomePage/presentation/widgets/Drawer%20Widgets/non-active-drawer-item-first.dart';
 import 'package:streamingapp/utils/assets.dart';
 import 'package:streamingapp/utils/colors-app.dart';
 import 'package:streamingapp/utils/models/drawerModel.dart';
@@ -77,75 +80,6 @@ class _DrawerListItemsState extends State<DrawerListItems> {
           ],
         ),
       ],
-    );
-  }
-}
-
-class CustomListTileActiveAndNonActive extends StatelessWidget {
-  const CustomListTileActiveAndNonActive({
-    super.key,
-    this.icon,
-    required this.title,
-    required this.isActive,
-  });
-  final String? icon;
-  final String title;
-  final bool isActive;
-  @override
-  Widget build(BuildContext context) {
-    return ListTile(
-      trailing: isActive ? SvgPicture.asset(icon ?? Assets.imagesActiveIconRed) : null,
-      title: Text(
-        title,
-        style: isActive
-            ? TextAppStyles.textStyle19Medium(
-                context,
-              ).copyWith(color: ColorsApp.redColor)
-            : TextAppStyles.textStyle19Medium(
-                context,
-              ).copyWith(color: ColorsApp.grey),
-      ),
-    );
-  }
-}
-
-class NonActiveDrawerItemFirst extends StatelessWidget {
-  const NonActiveDrawerItemFirst({
-    super.key,
-    required this.icon,
-    required this.txt,
-  });
-  final String icon;
-  final String txt;
-  @override
-  Widget build(BuildContext context) {
-    return ListTile(
-      leading: SvgPicture.asset(icon),
-      title: Text(txt, style: TextAppStyles.textStyle19Medium(context)),
-    );
-  }
-}
-
-class ActiveDrawerItemFirst extends StatelessWidget {
-  const ActiveDrawerItemFirst({
-    super.key,
-    required this.icon,
-    required this.txt,
-  });
-  final String icon;
-  final String txt;
-  @override
-
-  Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: Color(0xffEE4950),
-        borderRadius: BorderRadius.circular(3.82),
-      ),
-      child: ListTile(
-        leading: SvgPicture.asset(icon),
-        title: Text(txt, style: TextAppStyles.textStyle19Bold(context)),
-      ),
     );
   }
 }
