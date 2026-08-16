@@ -11,6 +11,16 @@ class DesktopLayout extends StatelessWidget {
         Expanded(
           child: CustomDrawer(),
         ),
+         Expanded(
+          child: Container(
+            color: Colors.blue,
+          ),
+        ),
+         Expanded(
+          child:Container(
+            color: Colors.blue,
+          ),
+        ),
       ] ,
     );
   }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:streamingapp/HomePage/presentation/views/music-streaming-view.dart';
+import 'package:streamingapp/utils/colors-app.dart';
 
 void main() {
   runApp(const MusicWebApp());
@@ -12,7 +13,11 @@ class MusicWebApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const MusicStreamingView(),
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+         scaffoldBackgroundColor: ColorsApp.primaryColor,
+      ),
+      home:  MusicStreamingView(),
     );
   } 
 }

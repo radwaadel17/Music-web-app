@@ -126,6 +126,10 @@ class Assets {
   /// assets/images/skip_previous.svg
   static const String imagesSkipPrevious = "assets/images/skip_previous.svg";
 
+  /// Assets for imagesUnfill
+  /// assets/images/unfill.svg
+  static const String imagesUnfill = "assets/images/unfill.svg";
+
   /// Assets for imagesUnsplashCdksyTqEXzo
   /// assets/images/unsplash_cdksyTqEXzo.svg
   static const String imagesUnsplashCdksyTqEXzo = "assets/images/unsplash_cdksyTqEXzo.svg";

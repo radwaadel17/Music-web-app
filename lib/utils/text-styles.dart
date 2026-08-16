@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:streamingapp/utils/size-config.dart';
-class TextStyles {
+class TextAppStyles {
 
   // ==================== 3.35 ====================
 
