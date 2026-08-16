@@ -20,7 +20,9 @@ class ActiveDrawerItemFirst extends StatelessWidget {
       ),
       child: ListTile(
         leading: SvgPicture.asset(icon),
-        title: Text(txt, style: TextAppStyles.textStyle19Bold(context)),
+        title: FittedBox(
+          fit : BoxFit.scaleDown,
+          child: Text(txt, style: TextAppStyles.textStyle19Bold(context))),
       ),
     );
   }

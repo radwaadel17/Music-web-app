@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:streamingapp/utils/colors-app.dart';
 import 'package:streamingapp/utils/widgets/custom-drawer.dart';
 
 class DesktopLayout extends StatelessWidget {
@@ -7,26 +8,27 @@ class DesktopLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
-      children:[
-         Row(
-        crossAxisAlignment : CrossAxisAlignment.stretch,
-        children :  [
-          Expanded(
-            child: CustomDrawer(),
-          ),
-           Expanded(
-            child: Container(
-              color: Colors.blue,
+      children: [
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Expanded(flex: 1, child: CustomDrawer()),
+            Expanded(
+              flex: 5,
+              child: Row(
+                children: [
+                  Expanded(flex: 2, child: Container(color: ColorsApp.grey)),
+
+                  Expanded(
+                    flex: 1,
+                    child: Container(color: ColorsApp.redColor),
+                  ),
+                ],
+              ),
             ),
-          ),
-           Expanded(
-            child:Container(
-              color: Colors.blue,
-            ),
-          ),
-        ] ,
-      ),
-      ]
+          ],
+        ),
+      ],
     );
   }
 }

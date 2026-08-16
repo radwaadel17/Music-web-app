@@ -54,11 +54,14 @@ class _DrawerListItemsState extends State<DrawerListItems> {
         ListTile(
           leading: SvgPicture.asset(Assets.imagesHomeIconBlue),
           trailing: SvgPicture.asset(Assets.imagesAdd),
-          title: Text(
-            'Home',
-            style: TextAppStyles.textStyle19Medium(
-              context,
-            ).copyWith(color: ColorsApp.blueColor),
+          title: FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              'Home',
+              style: TextAppStyles.textStyle19Medium(
+                context,
+              ).copyWith(color: ColorsApp.blueColor),
+            ),
           ),
         ),
 

@@ -14,7 +14,9 @@ class NonActiveDrawerItemFirst extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: SvgPicture.asset(icon),
-      title: Text(txt, style: TextAppStyles.textStyle19Medium(context)),
+      title: FittedBox(
+        fit : BoxFit.scaleDown,
+        child: Text(txt, style: TextAppStyles.textStyle19Medium(context))),
     );
   }
 }
