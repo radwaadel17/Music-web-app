@@ -6,6 +6,8 @@ class MusicStreamingView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MusicStreamingViewBody();
+    return const Scaffold(
+      body: MusicStreamingViewBody(),
+    );
   }
 }
