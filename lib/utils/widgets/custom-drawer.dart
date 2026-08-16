@@ -12,13 +12,13 @@ class CustomDrawer extends StatelessWidget {
     DrawerModel(title: 'Favorite', icon: Assets.imagesHeart),
     DrawerModel(title: 'Library', icon: Assets.imagesHeadphones),
   ];
-  static const List<Text> drawerItemsTwo = [
-    Text('For workplace'),
-    Text('Rich Brian’s collections'),
-    Text('deep focus'),
-    Text('Lo-Fi Jazz upbeat'),
-    Text('For workplace'),
-    Text('Christmas playlist'),
+  static const List<String> drawerItemsTwo = [
+    'For workplace',
+    'Rich Brian’s collections',
+    'deep focus',
+    'Lo-Fi Jazz upbeat',
+    'For workplace',
+    'Christmas playlist',
   ];
   @override
   Widget build(BuildContext context) {
@@ -41,5 +41,3 @@ class CustomDrawer extends StatelessWidget {
     );
   }
 }
-
-

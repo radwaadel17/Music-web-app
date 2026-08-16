@@ -6,23 +6,27 @@ class DesktopLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      crossAxisAlignment : CrossAxisAlignment.stretch,
-      children :  [
-        Expanded(
-          child: CustomDrawer(),
-        ),
-         Expanded(
-          child: Container(
-            color: Colors.blue,
+    return Stack(
+      children:[
+         Row(
+        crossAxisAlignment : CrossAxisAlignment.stretch,
+        children :  [
+          Expanded(
+            child: CustomDrawer(),
           ),
-        ),
-         Expanded(
-          child:Container(
-            color: Colors.blue,
+           Expanded(
+            child: Container(
+              color: Colors.blue,
+            ),
           ),
-        ),
-      ] ,
+           Expanded(
+            child:Container(
+              color: Colors.blue,
+            ),
+          ),
+        ] ,
+      ),
+      ]
     );
   }
 }
