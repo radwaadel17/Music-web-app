@@ -19,6 +19,7 @@ class CustomListTileActiveAndNonActive extends StatelessWidget {
     return ListTile(
       trailing: isActive ? SvgPicture.asset(icon ?? Assets.imagesActiveIconRed) : null,
       title: FittedBox(
+        alignment: AlignmentGeometry.centerLeft,
         fit: BoxFit.scaleDown,
         child: Text(
           title,

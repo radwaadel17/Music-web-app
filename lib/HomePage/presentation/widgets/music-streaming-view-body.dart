@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:streamingapp/utils/widgets/adaptive-layouts.dart';
-import 'package:streamingapp/utils/widgets/desktop-layout.dart';
-import 'package:streamingapp/utils/widgets/mobile-layout.dart';
-import 'package:streamingapp/utils/widgets/tablet-layout.dart';
+import 'package:streamingapp/utils/layouts/adaptive-layouts.dart';
+import 'package:streamingapp/utils/layouts/desktop-layout.dart';
+import 'package:streamingapp/utils/layouts/mobile-layout.dart';
+import 'package:streamingapp/utils/layouts/tablet-layout.dart';
 
 
 class MusicStreamingViewBody extends StatelessWidget {

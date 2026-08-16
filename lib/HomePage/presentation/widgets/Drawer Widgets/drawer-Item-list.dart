@@ -56,6 +56,7 @@ class _DrawerListItemsState extends State<DrawerListItems> {
           trailing: SvgPicture.asset(Assets.imagesAdd),
           title: FittedBox(
             fit: BoxFit.scaleDown,
+            alignment: AlignmentGeometry.centerLeft,
             child: Text(
               'Home',
               style: TextAppStyles.textStyle19Medium(
