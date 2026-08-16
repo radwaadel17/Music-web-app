@@ -6,5 +6,6 @@ class ColorsApp{
   static const Color whiteColor = Colors.white;
   static const Color redColor = Color(0xFFF3777D);
   static const Color grey = Color(0xFF959D99);
+  static const Color greyTwo = Color(0xFFAFB6B2);
   static const Color primaryColor = Color(0xFF171717);
 }
