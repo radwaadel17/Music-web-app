@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:streamingapp/HomePage/presentation/widgets/search-bar.dart';
 import 'package:streamingapp/utils/assets.dart';
 import 'package:streamingapp/utils/colors-app.dart';
 import 'package:streamingapp/utils/size-config.dart';
-import 'package:streamingapp/utils/text-styles.dart';
 
 class MainContentWidget extends StatelessWidget {
   const MainContentWidget({super.key});
@@ -26,15 +26,9 @@ class MainContentWidget extends StatelessWidget {
                 ),
               ),
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Container(
-                    color: ColorsApp.blueColor,
-                    child: Text(
-                      'Stream',
-                      style: TextAppStyles.textStyle19Bold(context),
-                    ),
-                  ),
+                  SizedBox(height: 15),
+                  SearchBarRow(),
                 ],
               ),
             ),
@@ -44,3 +38,4 @@ class MainContentWidget extends StatelessWidget {
     );
   }
 }
+
