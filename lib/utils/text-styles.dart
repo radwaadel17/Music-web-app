@@ -202,6 +202,15 @@ class TextAppStyles {
       color: Colors.white,
     );
   }
+   static TextStyle textStyle22Light(BuildContext context) {
+    return TextStyle(
+      fontFamily: 'Inter',
+      fontSize: getResponsiveFontSize(context, fontSize: 22.89),
+      fontWeight: FontWeight.w300,
+      color: Colors.white,
+    );
+  }
+
 
   static TextStyle textStyle22Medium(BuildContext context) {
     return TextStyle(
@@ -284,7 +293,7 @@ double getScaleFactor(context) {
   } else if (width < SizeConfig.desktop) {
     return width / 1000;
   } else {
-    return width / 1920;
+    return width / 1528 ; 
   }
 }
 
