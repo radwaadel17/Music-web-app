@@ -18,19 +18,17 @@ class CustomListTileActiveAndNonActive extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       trailing: isActive ? SvgPicture.asset(icon ?? Assets.imagesActiveIconRed) : null,
-      title: FittedBox(
-        alignment: AlignmentGeometry.centerLeft,
-        fit: BoxFit.scaleDown,
-        child: Text(
-          title,
-          style: isActive
-              ? TextAppStyles.textStyle19Medium(
-                  context,
-                ).copyWith(color: ColorsApp.redColor)
-              : TextAppStyles.textStyle19Medium(
-                  context,
-                ).copyWith(color: ColorsApp.grey),
-        ),
+      title: Text(
+         maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+        title,
+        style: isActive
+            ? TextAppStyles.textStyle19Medium(
+                context,
+              ).copyWith(color: ColorsApp.redColor)
+            : TextAppStyles.textStyle19Medium(
+                context,
+              ).copyWith(color: ColorsApp.grey),
       ),
     );
   }

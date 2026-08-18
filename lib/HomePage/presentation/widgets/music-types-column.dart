@@ -28,7 +28,7 @@ class _MusicTypesColumnState extends State<MusicTypesColumn> {
           .map(
             (entry) => Padding(
               padding: EdgeInsets.only(
-                bottom: width > 1098 && width > SizeConfig.desktop ? 3 : 0,
+                bottom: entry.key == widget.musicTypes.length - 1 ? 0 : width > 1098 && width > SizeConfig.desktop ? 3 : 0,
               ),
               child: GestureDetector(
                 onTap: () {

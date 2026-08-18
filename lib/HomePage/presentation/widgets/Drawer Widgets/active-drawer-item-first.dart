@@ -23,7 +23,9 @@ class ActiveDrawerItemFirst extends StatelessWidget {
         title: FittedBox(
           alignment: AlignmentGeometry.centerLeft,
           fit : BoxFit.scaleDown,
-          child: Text(txt, style: TextAppStyles.textStyle19Bold(context))),
+          child: Text(
+             overflow: TextOverflow.ellipsis,
+            txt, style: TextAppStyles.textStyle19Bold(context))),
       ),
     );
   }

@@ -4,9 +4,7 @@ import 'package:streamingapp/utils/assets.dart';
 import 'package:streamingapp/utils/colors-app.dart';
 
 class SearchContainer extends StatelessWidget {
-  const SearchContainer({
-    super.key,
-  });
+  const SearchContainer({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,13 +22,16 @@ class SearchContainer extends StatelessWidget {
             SvgPicture.asset(Assets.imagesSearch),
             SizedBox(width: 10),
             Expanded(
-              child: FittedBox(
-                fit : BoxFit.scaleDown,
-                alignment: AlignmentGeometry.centerLeft,
-                child: Text('Search artists, songs, albums...')),
+              child: TextField(
+                decoration: InputDecoration(
+                  hintText: 'Search artists, songs, albums...',
+                  border: InputBorder.none,
+                  isDense: true,
+                ),
+              ),
             ),
             Container(width: 1.5, height: 25, color: Colors.grey),
-            SizedBox(width: 15,) , 
+            SizedBox(width: 15),
             SvgPicture.asset(Assets.imagesGroup),
             SizedBox(width: 5),
           ],
@@ -39,10 +40,9 @@ class SearchContainer extends StatelessWidget {
     );
   }
 }
+
 class SearchBarRow extends StatelessWidget {
-  const SearchBarRow({
-    super.key,
-  });
+  const SearchBarRow({super.key});
 
   @override
   Widget build(BuildContext context) {
