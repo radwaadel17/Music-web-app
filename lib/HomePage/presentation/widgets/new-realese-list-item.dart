@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:streamingapp/HomePage/models/new-realeases-item.dart';
 import 'package:streamingapp/utils/colors-app.dart';
 import 'package:streamingapp/utils/text-styles.dart';
@@ -17,10 +16,14 @@ class NewRealseasListItem extends StatelessWidget {
           width: 180,
           decoration: BoxDecoration(
             color: ColorsApp.blueColor,
-            borderRadius: BorderRadius.circular(10),
+            image: DecorationImage(
+             fit: BoxFit.fill,
+             image : AssetImage(newRealesesItem.image ),
+            ),
           ),
-          child: SvgPicture.asset(newRealesesItem.image),
+          
         ),
+        SizedBox(height: 5 ,) , 
         Text(
           newRealesesItem.nameOfSong,
           style: TextAppStyles.textStyle15SemiBold(context),

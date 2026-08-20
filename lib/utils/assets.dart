@@ -126,6 +126,18 @@ class Assets {
   /// assets/images/play.svg
   static const String imagesPlay = "assets/images/play.svg";
 
+  /// Assets for imagesRecentplayedsongscover1
+  /// assets/images/recentplayedsongscover1.png
+  static const String imagesRecentplayedsongscover1 = "assets/images/recentplayedsongscover1.png";
+
+  /// Assets for imagesRecentplayedsongscover2
+  /// assets/images/recentplayedsongscover2.png
+  static const String imagesRecentplayedsongscover2 = "assets/images/recentplayedsongscover2.png";
+
+  /// Assets for imagesRecentplayedsongscover3
+  /// assets/images/recentplayedsongscover3.png
+  static const String imagesRecentplayedsongscover3 = "assets/images/recentplayedsongscover3.png";
+
   /// Assets for imagesRepeat
   /// assets/images/repeat.svg
   static const String imagesRepeat = "assets/images/repeat.svg";
