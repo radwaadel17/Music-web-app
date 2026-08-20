@@ -14,7 +14,6 @@ class DesktopLayout extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Expanded(flex: 1, child: CustomDrawer()),
-
             Expanded(
               flex: 5,
               child: CustomScrollView(
