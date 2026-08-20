@@ -27,32 +27,32 @@ class Assets {
   static const String imagesBanner2 = "assets/images/Banner2.png";
 
   /// Assets for imagesCat1
-  /// assets/images/cat1.svg
-  static const String imagesCat1 = "assets/images/cat1.svg";
+  /// assets/images/cat1.png
+  static const String imagesCat1 = "assets/images/cat1.png";
 
   /// Assets for imagesCat2
-  /// assets/images/cat2.svg
-  static const String imagesCat2 = "assets/images/cat2.svg";
+  /// assets/images/cat2.png
+  static const String imagesCat2 = "assets/images/cat2.png";
 
   /// Assets for imagesCat3
-  /// assets/images/cat3.svg
-  static const String imagesCat3 = "assets/images/cat3.svg";
+  /// assets/images/cat3.png
+  static const String imagesCat3 = "assets/images/cat3.png";
 
   /// Assets for imagesCat4
-  /// assets/images/cat4.svg
-  static const String imagesCat4 = "assets/images/cat4.svg";
+  /// assets/images/cat4.png
+  static const String imagesCat4 = "assets/images/cat4.png";
 
   /// Assets for imagesCat5
-  /// assets/images/cat5.svg
-  static const String imagesCat5 = "assets/images/cat5.svg";
+  /// assets/images/cat5.png
+  static const String imagesCat5 = "assets/images/cat5.png";
 
   /// Assets for imagesCat6
-  /// assets/images/cat6.svg
-  static const String imagesCat6 = "assets/images/cat6.svg";
+  /// assets/images/cat6.png
+  static const String imagesCat6 = "assets/images/cat6.png";
 
   /// Assets for imagesCat7
-  /// assets/images/cat7.svg
-  static const String imagesCat7 = "assets/images/cat7.svg";
+  /// assets/images/cat7.png
+  static const String imagesCat7 = "assets/images/cat7.png";
 
   /// Assets for imagesCat8
   /// assets/images/cat8.svg
