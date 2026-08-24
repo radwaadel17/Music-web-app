@@ -15,7 +15,7 @@ class YouMayLikeList extends StatelessWidget {
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.start,
+       
         children: list
             .map((e) => Padding(
               padding: const EdgeInsets.only(right: 20),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:streamingapp/HomePage/presentation/play-music-bar.dart';
 import 'package:streamingapp/HomePage/presentation/widgets/main-content-widget.dart';
 import 'package:streamingapp/utils/colors-app.dart';
 import 'package:streamingapp/utils/widgets/custom-drawer.dart';
@@ -40,7 +41,12 @@ class DesktopLayout extends StatelessWidget {
             ),
           ],
         ),
+        Positioned(bottom: 0, child: PlayMusicBar()),
       ],
     );
   }
 }
+
+
+
+

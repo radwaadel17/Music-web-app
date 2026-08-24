@@ -8,4 +8,5 @@ class ColorsApp{
   static const Color grey = Color(0xFF959D99);
   static const Color greyTwo = Color(0xFFAFB6B2);
   static const Color primaryColor = Color(0xFF171717);
+  static const Color lightGrey = Color(0xFFE4E7E5) ; 
 }

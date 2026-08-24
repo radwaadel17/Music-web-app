@@ -14,6 +14,10 @@ class Assets {
   /// assets/images/add.svg
   static const String imagesAdd = "assets/images/add.svg";
 
+  /// Assets for imagesAddToList
+  /// assets/images/addToList.svg
+  static const String imagesAddToList = "assets/images/addToList.svg";
+
   /// Assets for imagesAdele
   /// assets/images/adele.svg
   static const String imagesAdele = "assets/images/adele.svg";
@@ -70,6 +74,10 @@ class Assets {
   /// assets/images/dots.svg
   static const String imagesDots = "assets/images/dots.svg";
 
+  /// Assets for imagesDotsWhite
+  /// assets/images/dotsWhite.svg
+  static const String imagesDotsWhite = "assets/images/dotsWhite.svg";
+
   /// Assets for imagesGroup
   /// assets/images/Group.svg
   static const String imagesGroup = "assets/images/Group.svg";
@@ -81,6 +89,10 @@ class Assets {
   /// Assets for imagesHeart
   /// assets/images/heart.svg
   static const String imagesHeart = "assets/images/heart.svg";
+
+  /// Assets for imagesHeartFill
+  /// assets/images/heartFill.svg
+  static const String imagesHeartFill = "assets/images/heartFill.svg";
 
   /// Assets for imagesHeartGrey
   /// assets/images/heartGrey.svg
@@ -141,6 +153,10 @@ class Assets {
   /// Assets for imagesRepeat
   /// assets/images/repeat.svg
   static const String imagesRepeat = "assets/images/repeat.svg";
+
+  /// Assets for imagesRose
+  /// assets/images/rose.png
+  static const String imagesRose = "assets/images/rose.png";
 
   /// Assets for imagesSearch
   /// assets/images/search.svg

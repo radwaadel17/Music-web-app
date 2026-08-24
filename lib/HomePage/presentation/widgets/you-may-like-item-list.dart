@@ -25,9 +25,7 @@ class YouMayLikeListItem extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
-
           const SizedBox(height: 6),
-
           SizedBox(
             height: 20, 
             child: Text(

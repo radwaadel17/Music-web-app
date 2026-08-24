@@ -108,7 +108,7 @@ class MainContentWidget extends StatelessWidget {
           YouMayLikeHeader() , 
           SizedBox(height: 10),
           YouMayLikeList(list: youMayLikeList),
-           SizedBox(height: 50),
+          SizedBox(height: 50),
         ],
       ),
     );
