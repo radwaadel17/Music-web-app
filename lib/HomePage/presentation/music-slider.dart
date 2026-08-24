@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:streamingapp/HomePage/presentation/custom-slider.dart';
 import 'package:streamingapp/utils/assets.dart';
 import 'package:streamingapp/utils/colors-app.dart';
 import 'package:streamingapp/utils/text-styles.dart';
@@ -67,22 +68,7 @@ class MusicSlider extends StatelessWidget {
                     Text('2:45', style: TextAppStyles.textStyle13Regular(context)),
                     SizedBox(width: 10),
                     Expanded(
-                      child: SliderTheme(
-                        data: SliderTheme.of(context).copyWith(
-                          thumbShape: RoundSliderThumbShape(enabledThumbRadius: 0.0),
-                          activeTrackColor : Color(0xFFEE4950),
-                          inactiveTrackColor: ColorsApp.lightGrey,
-                          trackHeight: 4.0,
-                          overlayShape: const RoundSliderOverlayShape(overlayRadius: 14.0),
-                          valueIndicatorColor: ColorsApp.redColor,
-                        ),
-                        child: Slider(
-                          value: 155,
-                          min: 0,
-                          max: 207,
-                          onChanged: (value) {},
-                        ),
-                      )
+                      child: CustomSlider()
                     ),
                     SizedBox(width: 10),
                     Text('3:27', style: TextAppStyles.textStyle13Regular(context)),
@@ -98,3 +84,4 @@ class MusicSlider extends StatelessWidget {
     );
   }
 }
+
