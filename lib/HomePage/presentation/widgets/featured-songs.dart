@@ -30,7 +30,7 @@ class FeaturedSongsColumn extends StatelessWidget {
             SvgPicture.asset(Assets.imagesHeartGrey),
             SizedBox(width: 20),
             SizedBox(
-             height: (SizeConfig.screenWidth <= 1003 && SizeConfig.screenWidth > 900 )  ? 30 : 40 ,
+             height: (SizeConfig.screenWidth <= 1004 && SizeConfig.screenWidth > 900 )  ? 30 : 40 ,
              width: 100 , 
              child: CustomTextButton(),
             ),
