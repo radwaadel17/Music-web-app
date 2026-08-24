@@ -7,11 +7,19 @@ import 'package:streamingapp/utils/colors-app.dart';
 class BannerWidget extends StatelessWidget {
   const BannerWidget({
     super.key,
-    required this.musicTypes,
   });
 
-  final List<String> musicTypes;
+ 
+ static const List<String> musicTypes = [
+    "R&B",
+    "Pop",
+    "Rap",
+    "Ballad",
+    "Country",
+    "Hip Hop",
+  ];
 
+ 
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
