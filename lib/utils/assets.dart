@@ -66,6 +66,10 @@ class Assets {
   /// assets/images/choosen.svg
   static const String imagesChoosen = "assets/images/choosen.svg";
 
+  /// Assets for imagesChoosenGrey
+  /// assets/images/choosenGrey.svg
+  static const String imagesChoosenGrey = "assets/images/choosenGrey.svg";
+
   /// Assets for imagesCoolicon
   /// assets/images/coolicon.svg
   static const String imagesCoolicon = "assets/images/coolicon.svg";
@@ -137,6 +141,38 @@ class Assets {
   /// Assets for imagesPlay
   /// assets/images/play.svg
   static const String imagesPlay = "assets/images/play.svg";
+
+  /// Assets for imagesR2
+  /// assets/images/r2.png
+  static const String imagesR2 = "assets/images/r2.png";
+
+  /// Assets for imagesR3
+  /// assets/images/r3.png
+  static const String imagesR3 = "assets/images/r3.png";
+
+  /// Assets for imagesR5
+  /// assets/images/r5.png
+  static const String imagesR5 = "assets/images/r5.png";
+
+  /// Assets for imagesR6
+  /// assets/images/r6.png
+  static const String imagesR6 = "assets/images/r6.png";
+
+  /// Assets for imagesR7
+  /// assets/images/r7.png
+  static const String imagesR7 = "assets/images/r7.png";
+
+  /// Assets for imagesR8
+  /// assets/images/r8.png
+  static const String imagesR8 = "assets/images/r8.png";
+
+  /// Assets for imagesR9
+  /// assets/images/r9.png
+  static const String imagesR9 = "assets/images/r9.png";
+
+  /// Assets for imagesRecenlty
+  /// assets/images/recenlty.svg
+  static const String imagesRecenlty = "assets/images/recenlty.svg";
 
   /// Assets for imagesRecentplayedsongscover1
   /// assets/images/recentplayedsongscover1.png

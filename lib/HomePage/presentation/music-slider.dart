@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:streamingapp/HomePage/presentation/custom-music-photo.dart';
 import 'package:streamingapp/HomePage/presentation/custom-slider.dart';
 import 'package:streamingapp/utils/assets.dart';
 import 'package:streamingapp/utils/colors-app.dart';
@@ -19,16 +20,7 @@ class MusicSlider extends StatelessWidget {
       children: [
         Padding(
           padding: const EdgeInsets.all(8),
-          child: Container(
-            width: 60,
-            height: 60,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                fit: BoxFit.cover,
-                image: AssetImage(Assets.imagesRose),
-              ),
-            ),
-          ),
+          child: CustomMusicPhoto( width: 60, height: 60, image:Assets.imagesRose,),
         ),
 
      SizedBox(width: 50) , 
@@ -84,4 +76,5 @@ class MusicSlider extends StatelessWidget {
     );
   }
 }
+
 

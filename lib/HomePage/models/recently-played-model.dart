@@ -5,5 +5,5 @@ class RecentlyPlayedModel{
   final String title ; 
   final String image;
   final String mins ; 
-  RecentlyPlayedModel(this.title, this.image, this.mins, {required this.songName,required this.singerName});
+   RecentlyPlayedModel( {required this.songName,required this.singerName ,required this.title,required this.image,required this.mins});
 }
