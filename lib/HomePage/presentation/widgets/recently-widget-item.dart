@@ -51,7 +51,7 @@ class RecentlyWidgetItem extends StatelessWidget {
             overflow: TextOverflow.ellipsis,
             maxLines: 1,
             style: TextAppStyles.textStyle15Regular(context)
-                .copyWith(color: ColorsApp.grey),
+                .copyWith(color: const Color.fromARGB(255, 125, 171, 148)),
           ),
         ),
         const SizedBox(width: 10),
