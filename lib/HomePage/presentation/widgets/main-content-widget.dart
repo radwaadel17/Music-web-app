@@ -29,7 +29,7 @@ class MainContentWidget extends StatelessWidget {
           YouMayLikeList(),
           SizedBox(height: 50),
           RecenltlyPlayedHeader(),
-          SizedBox(height: 50),
+          SizedBox(height: 10),
          ListViewOfRecentlyPlayed() ,
           SizedBox(height: 100),
         ],
