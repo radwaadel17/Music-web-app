@@ -62,6 +62,14 @@ class Assets {
   /// assets/images/cat8.svg
   static const String imagesCat8 = "assets/images/cat8.svg";
 
+  /// Assets for imagesCategory
+  /// assets/images/Category.png
+  static const String imagesCategory = "assets/images/Category.png";
+
+  /// Assets for imagesChill
+  /// assets/images/Chill.png
+  static const String imagesChill = "assets/images/Chill.png";
+
   /// Assets for imagesChoosen
   /// assets/images/choosen.svg
   static const String imagesChoosen = "assets/images/choosen.svg";
@@ -69,6 +77,10 @@ class Assets {
   /// Assets for imagesChoosenGrey
   /// assets/images/choosenGrey.svg
   static const String imagesChoosenGrey = "assets/images/choosenGrey.svg";
+
+  /// Assets for imagesChristmas
+  /// assets/images/Christmas.png
+  static const String imagesChristmas = "assets/images/Christmas.png";
 
   /// Assets for imagesCoolicon
   /// assets/images/coolicon.svg
@@ -106,6 +118,10 @@ class Assets {
   /// assets/images/heartGrey.svg
   static const String imagesHeartGrey = "assets/images/heartGrey.svg";
 
+  /// Assets for imagesHipHop
+  /// assets/images/HipHop.png
+  static const String imagesHipHop = "assets/images/HipHop.png";
+
   /// Assets for imagesHomeIcon
   /// assets/images/home-icon.svg
   static const String imagesHomeIcon = "assets/images/home-icon.svg";
@@ -113,6 +129,10 @@ class Assets {
   /// Assets for imagesHomeIconBlue
   /// assets/images/home-icon-blue.svg
   static const String imagesHomeIconBlue = "assets/images/home-icon-blue.svg";
+
+  /// Assets for imagesJazz
+  /// assets/images/jazz.png
+  static const String imagesJazz = "assets/images/jazz.png";
 
   /// Assets for imagesListPlus
   /// assets/images/list_plus.svg
@@ -145,6 +165,14 @@ class Assets {
   /// Assets for imagesPlay
   /// assets/images/play.svg
   static const String imagesPlay = "assets/images/play.svg";
+
+  /// Assets for imagesPodcast
+  /// assets/images/Podcast.png
+  static const String imagesPodcast = "assets/images/Podcast.png";
+
+  /// Assets for imagesPop
+  /// assets/images/Pop.png
+  static const String imagesPop = "assets/images/Pop.png";
 
   /// Assets for imagesR2
   /// assets/images/r2.png
@@ -193,6 +221,14 @@ class Assets {
   /// Assets for imagesRepeat
   /// assets/images/repeat.svg
   static const String imagesRepeat = "assets/images/repeat.svg";
+
+  /// Assets for imagesRock
+  /// assets/images/Rock.png
+  static const String imagesRock = "assets/images/Rock.png";
+
+  /// Assets for imagesRomance
+  /// assets/images/Romance.png
+  static const String imagesRomance = "assets/images/Romance.png";
 
   /// Assets for imagesRose
   /// assets/images/rose.png
