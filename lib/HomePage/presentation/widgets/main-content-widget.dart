@@ -11,11 +11,9 @@ import 'package:streamingapp/utils/size-config.dart';
 
 class MainContentWidget extends StatefulWidget {
   const MainContentWidget({super.key});
-
   @override
   State<MainContentWidget> createState() => _MainContentWidgetState();
 }
-
 class _MainContentWidgetState extends State<MainContentWidget> {
   @override
   Widget build(BuildContext context){

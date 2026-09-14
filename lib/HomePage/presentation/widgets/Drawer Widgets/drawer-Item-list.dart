@@ -25,32 +25,42 @@ class DrawerListItems extends StatefulWidget {
 class _DrawerListItemsState extends State<DrawerListItems> {
   int selectedIndex = 0;
   int selectedIndexTwo = 0;
+
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         SvgPicture.asset(Assets.imagesLogo),
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
         ...widget.drawerItems.asMap().entries.map(
-          (entry) => GestureDetector(
-            onTap: () {
-              setState(() {
-                selectedIndex = entry.key;
-              });
-            },
-            child: selectedIndex != entry.key
-                ? NonActiveDrawerItemFirst(
-                    icon: entry.value.icon,
-                    txt: entry.value.title,
-                  )
-                : ActiveDrawerItemFirst(
-                    icon: entry.value.icon,
-                    txt: entry.value.title,
+              (entry) => GestureDetector(
+                onTap: () {
+                  setState(() {
+                    selectedIndex = entry.key;
+                  });
+                },
+                child: AnimatedSwitcher(
+                  duration: const Duration(milliseconds: 300),
+                  transitionBuilder: (child, animation) => FadeTransition(
+                    opacity: animation,
+                    child: child,
                   ),
-          ),
-        ),
-        SizedBox(height: 20),
+                  child: selectedIndex != entry.key
+                      ? NonActiveDrawerItemFirst(
+                          key: ValueKey('inactive_${entry.key}'),
+                          icon: entry.value.icon,
+                          txt: entry.value.title,
+                        )
+                      : ActiveDrawerItemFirst(
+                          key: ValueKey('active_${entry.key}'),
+                          icon: entry.value.icon,
+                          txt: entry.value.title,
+                        ),
+                ),
+              ),
+            ),
+        const SizedBox(height: 20),
         ListTile(
           leading: SvgPicture.asset(Assets.imagesHomeIconBlue),
           trailing: SvgPicture.asset(Assets.imagesAdd),
@@ -65,22 +75,21 @@ class _DrawerListItemsState extends State<DrawerListItems> {
             ),
           ),
         ),
-
         Column(
           children: [
             ...widget.drawerItemsTwo.asMap().entries.map(
-              (entry) => GestureDetector(
-                onTap: () {
-                  setState(() {
-                    selectedIndexTwo = entry.key;
-                  });
-                },
-                child: CustomListTileActiveAndNonActive(
-                  title: entry.value.toString(),
-                  isActive: selectedIndexTwo == entry.key,
+                  (entry) => GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        selectedIndexTwo = entry.key;
+                      });
+                    },
+                    child: CustomListTileActiveAndNonActive(
+                      title: entry.value.toString(),
+                      isActive: selectedIndexTwo == entry.key,
+                    ),
+                  ),
                 ),
-              ),
-            ),
           ],
         ),
       ],

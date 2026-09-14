@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:streamingapp/HomePage/models/new-realeases-item.dart';
 import 'package:streamingapp/HomePage/presentation/widgets/new-realese-list-item.dart';
+import 'package:streamingapp/HomePage/presentation/widgets/tap-animated-scale.dart';
 import 'package:streamingapp/utils/assets.dart';
 
 class NewRealsesList extends StatelessWidget {
@@ -47,9 +48,15 @@ class NewRealsesList extends StatelessWidget {
       child: Row(
         children: newRealeases
             .map((e) => Padding(
-              padding: const EdgeInsets.only(right: 20),
-              child: NewRealseasListItem(newRealesesItem: e),
-            ))
+                  padding: const EdgeInsets.only(right: 20),
+                  child: TapAnimatedScale(
+                    onTap: () {
+                      // اكتبي هنا الأكشن اللي المفروض يحصل لما تدوسي
+                      print('Item tapped!');
+                    },
+                    child: NewRealseasListItem(newRealesesItem: e),
+                  ),
+                ))
             .toList(),
       ),
     );

@@ -3,6 +3,7 @@ import 'package:streamingapp/HomePage/models/categories-Grid-item-model.dart';
 import 'package:streamingapp/HomePage/presentation/widgets/categories-grid-item.dart';
 import 'package:streamingapp/HomePage/presentation/widgets/categories-header.dart';
 import 'package:streamingapp/HomePage/presentation/widgets/list-view-of-top-stream.dart';
+import 'package:streamingapp/HomePage/presentation/widgets/tap-animated-scale.dart';
 import 'package:streamingapp/utils/assets.dart';
 
 class TopStreamsAndCategories extends StatelessWidget {
@@ -73,8 +74,12 @@ class CategoriesGridView extends StatelessWidget {
       ),
       itemCount: categoriesList.length,
       itemBuilder: (context, index) {
-        return CategoriesGridItem(
-          categoriesGridItemModel: categoriesList[index],
+        return TapAnimatedScale(
+          onTap: () {
+          },
+          child: CategoriesGridItem(
+            categoriesGridItemModel: categoriesList[index],
+          ),
         );
       },
     );

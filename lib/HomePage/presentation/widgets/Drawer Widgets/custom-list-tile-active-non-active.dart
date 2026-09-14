@@ -11,38 +11,43 @@ class CustomListTileActiveAndNonActive extends StatelessWidget {
     required this.title,
     required this.isActive,
   });
+
   final String? icon;
   final String title;
   final bool isActive;
+
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      trailing: isActive ? SvgPicture.asset(icon ?? Assets.imagesActiveIconRed) : null,
-      title:isActive == false ?  Text(
-         maxLines: 1,
-          overflow: TextOverflow.ellipsis,
-        title,
-        style: isActive
-            ? TextAppStyles.textStyle19Medium(
-                context,
-              ).copyWith(color: ColorsApp.redColor)
-            : TextAppStyles.textStyle19Medium(
-                context,
-              ).copyWith(color: ColorsApp.grey),
-      ) : FittedBox(
-        alignment: AlignmentGeometry.centerLeft,
-        fit: BoxFit.scaleDown,
-        child: Text(
-          title,
-          style: isActive
-              ? TextAppStyles.textStyle19Medium(
-                  context,
-                ).copyWith(color: ColorsApp.redColor)
-              : TextAppStyles.textStyle19Medium(
-                  context,
-                ).copyWith(color: ColorsApp.grey),
+      trailing: AnimatedSwitcher(
+        duration: const Duration(milliseconds: 300),
+        transitionBuilder: (child, animation) => ScaleTransition(
+          scale: animation,
+          child: child,
         ),
-      )
+        child: isActive
+            ? SvgPicture.asset(
+                icon ?? Assets.imagesActiveIconRed,
+                key: const ValueKey('activeIcon'),
+              )
+            : const SizedBox.shrink(key: ValueKey('inactiveIcon')),
+      ),
+      title: AnimatedDefaultTextStyle(
+        duration: const Duration(milliseconds: 300),
+        style: TextAppStyles.textStyle19Medium(context).copyWith(
+          color: isActive ? ColorsApp.redColor : ColorsApp.grey,
+        ),
+        child: isActive
+            ? Text(title   ,
+              maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            )
+            : Text(
+                title,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+              ),
+      ),
     );
   }
 }
