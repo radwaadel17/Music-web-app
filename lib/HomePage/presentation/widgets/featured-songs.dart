@@ -12,8 +12,9 @@ class FeaturedSongsColumn extends StatelessWidget {
   Widget build(BuildContext context) {
     SizeConfig.init(context);
     //print(SizeConfig.screenWidth);
+    var screenWidth = SizeConfig.screenWidth;
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.end,
+      crossAxisAlignment: screenWidth <= 1280 ? CrossAxisAlignment.center : CrossAxisAlignment.end,
       mainAxisSize: MainAxisSize.min,
       children: [
         Text("FEATURED SONGS", style: TextAppStyles.textStyle13Bold(context)),
@@ -24,6 +25,7 @@ class FeaturedSongsColumn extends StatelessWidget {
         Text("Circles", style: TextAppStyles.textStyle38Bold(context)),
         Flexible(child: SizedBox(height: 25)),
         Row(
+          mainAxisAlignment: screenWidth <= 1280 ? MainAxisAlignment.center : MainAxisAlignment.end,
           children: [
             SvgPicture.asset(Assets.imagesDots),
             SizedBox(width: 20),

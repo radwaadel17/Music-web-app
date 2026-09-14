@@ -7,7 +7,7 @@ import 'package:streamingapp/utils/colors-app.dart';
 void main() => runApp(
   DevicePreview(
     enabled: !kReleaseMode,
-    builder: (context) => MusicWebApp(), // Wrap your app
+    builder: (context) => MusicWebApp(),
   ),
 );
 class MusicWebApp extends StatelessWidget {

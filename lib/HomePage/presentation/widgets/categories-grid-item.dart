@@ -19,9 +19,13 @@ class CategoriesGridItem extends StatelessWidget {
           ),
         ),
         child: Center(
-          child: Text(
-            categoriesGridItemModel.categoryName,
-            style: TextAppStyles.textStyle22SemiBold(context),
+          child: FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              categoriesGridItemModel.categoryName,
+              overflow: TextOverflow.ellipsis,
+              style: TextAppStyles.textStyle22SemiBold(context),
+            ),
           ),
        
         ),
