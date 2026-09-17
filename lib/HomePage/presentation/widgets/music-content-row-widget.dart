@@ -9,7 +9,7 @@ class MusicContentRowList extends StatelessWidget {
     return Row(
       children: musicTypes.map((musicType) => Expanded(
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.only( right : 10),
           child: MusicTypesListItem(musicType: musicType),
         ),
       )).toList(),

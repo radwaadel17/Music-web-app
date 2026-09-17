@@ -12,8 +12,6 @@ void main() => runApp(
 );
 class MusicWebApp extends StatelessWidget {
   const MusicWebApp({super.key});
-
-  // This widget is the root of your ap؛plication.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

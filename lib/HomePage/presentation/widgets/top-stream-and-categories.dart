@@ -5,14 +5,18 @@ import 'package:streamingapp/HomePage/presentation/widgets/categories-header.dar
 import 'package:streamingapp/HomePage/presentation/widgets/list-view-of-top-stream.dart';
 import 'package:streamingapp/HomePage/presentation/widgets/tap-animated-scale.dart';
 import 'package:streamingapp/utils/assets.dart';
+import 'package:streamingapp/utils/size-config.dart';
 
 class TopStreamsAndCategories extends StatelessWidget {
   const TopStreamsAndCategories({super.key});
 
   @override
   Widget build(BuildContext context) {
+    SizeConfig.init(context);
+    var screenWidth = SizeConfig.screenWidth;
+    var desktopSize = SizeConfig.desktop;
     return Padding(
-      padding: const EdgeInsets.only(top: 32, right: 30),
+      padding:  EdgeInsets.only(top: 32, right: screenWidth <= desktopSize ? 0 : 30),
       child: Column(
         children: [
           Container(

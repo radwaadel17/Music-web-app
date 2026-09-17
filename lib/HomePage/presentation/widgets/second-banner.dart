@@ -7,7 +7,7 @@ import 'package:streamingapp/utils/colors-app.dart';
 
 class SecondBannerWidget extends StatelessWidget {
   const SecondBannerWidget({super.key});
-   static const List<String> musicTypes = [
+  static const List<String> musicTypes = [
     "R&B",
     "Pop",
     "Rap",
@@ -19,48 +19,43 @@ class SecondBannerWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-       SearchContainer(),
-        SizedBox(height: 10),
+        SearchContainer(),
+        SizedBox(height: 15),
         MusicContentRowList(musicTypes: SecondBannerWidget.musicTypes),
-        SizedBox(height: 10),
+        SizedBox(height: 15),
         AspectRatio(
           aspectRatio: 1003.58 / 453.99,
           child: Container(
-            padding: const EdgeInsets.all(8),
+            padding: const EdgeInsets.all(5),
             decoration: BoxDecoration(
               gradient: const LinearGradient(
-        colors: [
-          ColorsApp.primaryColor  , 
-          ColorsApp.secondaryColor,   
-       
-        ],
-        begin: Alignment.topLeft,
-        end: Alignment.bottomRight,
-      ),
+                colors: [
+                  ColorsApp.primaryColor,
+                  Color.fromARGB(255, 74, 74, 74),
+                ],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
               color: ColorsApp.secondaryColor,
               borderRadius: BorderRadius.circular(10),
             ),
-            child: Padding(
-              padding: const EdgeInsets.all(8),
-              child: Row(
-               
-                children: [
-                 Expanded(
-                   child: Container(
-                      decoration: BoxDecoration(
-                        color: ColorsApp.blueColor,
-                        borderRadius: BorderRadius.circular(10),
-                        image: DecorationImage(
-                          fit: BoxFit.cover,
-                          image: AssetImage(Assets.imagesBanner2),
-                        ),
+            child: Row(
+              children: [
+                Expanded(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: ColorsApp.blueColor,
+                      borderRadius: BorderRadius.circular(10),
+                      image: DecorationImage(
+                        fit: BoxFit.cover,
+                        image: AssetImage(Assets.imagesBanner2),
                       ),
                     ),
-                 ),
-                  SizedBox(width: 20),
-                 Expanded(child: TrackDetailsSection()),
-                ],
-              ),
+                  ),
+                ),
+                SizedBox(width: 20),
+                Expanded(child: TrackDetailsSection()),
+              ],
             ),
           ),
         ),

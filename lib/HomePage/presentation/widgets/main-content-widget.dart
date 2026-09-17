@@ -23,7 +23,7 @@ class _MainContentWidgetState extends State<MainContentWidget> {
       padding: const EdgeInsets.only(top: 32),
       child: Column(
         children: [
-          screenWidth <= 1280 ?   SecondBannerWidget()  : BannerWidget(),
+          screenWidth <= SizeConfig.desktop ?   SecondBannerWidget()  : BannerWidget(),
           SizedBox(height: 10),
           NewRealsesHeader(),
           SizedBox(height: 10),
@@ -36,7 +36,7 @@ class _MainContentWidgetState extends State<MainContentWidget> {
           RecenltlyPlayedHeader(),
           SizedBox(height: 10),
           ListViewOfRecentlyPlayed() ,
-          SizedBox(height: 100),
+          SizedBox(height: 20),
         ],
       ),
     );  }
