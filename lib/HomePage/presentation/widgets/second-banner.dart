@@ -26,7 +26,7 @@ class SecondBannerWidget extends StatelessWidget {
         AspectRatio(
           aspectRatio: 1003.58 / 453.99,
           child: Container(
-            padding: const EdgeInsets.all(5),
+            padding: const EdgeInsets.all(10),
             decoration: BoxDecoration(
               gradient: const LinearGradient(
                 colors: [
