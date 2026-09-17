@@ -34,15 +34,17 @@ class MusicSlider extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                     Flexible(
+                     FittedBox(
+                      fit: BoxFit.scaleDown,
                         child: Text(
                           songName,
                           maxLines: 1,
                            overflow: TextOverflow.ellipsis,
                           style: TextAppStyles.textStyle19SemiBold(context),
                         ),
-                      ), 
-                      Flexible(
+                      )  , 
+                      FittedBox(
+                           fit: BoxFit.scaleDown,
                         child: Text(
                           ' . $singerName ',
                           style: TextAppStyles.textStyle19Regular(context).copyWith(
@@ -57,13 +59,18 @@ class MusicSlider extends StatelessWidget {
               Expanded(
                 child: Row(
                   children: [
-                    Text('2:45', style: TextAppStyles.textStyle13Regular(context)),
+                    FittedBox(
+                        fit: BoxFit.scaleDown,
+                      child: Text('2:45', style: TextAppStyles.textStyle13Regular(context))),
                     SizedBox(width: 10),
                     Expanded(
                       child: CustomSlider()
                     ),
                     SizedBox(width: 10),
-                    Text('3:27', style: TextAppStyles.textStyle13Regular(context)),
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text('3:27', style: TextAppStyles.textStyle13Regular(context)),
+                    ),
                   ],
                 ),
               ),

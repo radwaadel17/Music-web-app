@@ -8,33 +8,38 @@ class NewRealseasListItem extends StatelessWidget {
   final NewRealesesItem newRealesesItem;
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Container(
-          height: 180,
-          width: 180,
-          decoration: BoxDecoration(
-            color: ColorsApp.blueColor,
-            image: DecorationImage(
-             fit: BoxFit.fill,
-             image : AssetImage(newRealesesItem.image ),
+    return SizedBox(
+      width: 180,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            height: 180,
+            width: 180,
+            decoration: BoxDecoration(
+              color: ColorsApp.blueColor,
+              image: DecorationImage(
+               fit: BoxFit.fill,
+               image : AssetImage(newRealesesItem.image ),
+              ),
             ),
+            
           ),
-          
-        ),
-        SizedBox(height: 5 ,) , 
-        Text(
-          newRealesesItem.nameOfSong,
-          style: TextAppStyles.textStyle15SemiBold(context),
-        ),
-        Text(
-          newRealesesItem.artist,
-          style: TextAppStyles.textStyle13Regular(
-            context,
-          ).copyWith(color: ColorsApp.grey),
-        ),
-      ],
+          SizedBox(height: 5 ,) , 
+          Text(
+            newRealesesItem.nameOfSong,
+            overflow: TextOverflow.ellipsis,
+            style: TextAppStyles.textStyle15SemiBold(context),
+          ),
+          Text(
+            newRealesesItem.artist,
+            overflow: TextOverflow.ellipsis,
+            style: TextAppStyles.textStyle13Regular(
+              context,
+            ).copyWith(color: ColorsApp.grey),
+          ),
+        ],
+      ),
     );
   }
 }

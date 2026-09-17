@@ -28,25 +28,31 @@ class YouMayLikeListItem extends StatelessWidget {
           const SizedBox(height: 6),
           SizedBox(
             height: 20, 
-            child: Text(
-              item.title,
-              textAlign: TextAlign.center,
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-              style: TextAppStyles.textStyle15SemiBold(context),
+            child: FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text(
+                item.title,
+                textAlign: TextAlign.center,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: TextAppStyles.textStyle15SemiBold(context),
+              ),
             ),
           ),
            
            const SizedBox(height: 6),
           SizedBox(
             height: 20, 
-            child: Text(
-              item.subtitle,
-              textAlign: TextAlign.center,
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-              style: TextAppStyles.textStyle13Regular(context)
-                  .copyWith(color: ColorsApp.grey),
+            child: FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text(
+                item.subtitle,
+                textAlign: TextAlign.center,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: TextAppStyles.textStyle13Regular(context)
+                    .copyWith(color: ColorsApp.grey),
+              ),
             ),
           ),
         ],

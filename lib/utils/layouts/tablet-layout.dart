@@ -35,7 +35,7 @@ class TabletLayout extends StatelessWidget {
             ),
           ],
         ),
-        Positioned(bottom: 0, child: PlayMusicBar()),
+        Positioned(bottom: 0, child: PlayMusicBarTablet()),
       ],
     );
   }

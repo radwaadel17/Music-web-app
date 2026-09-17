@@ -14,10 +14,9 @@ class SongPlayingInfo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        //Flexible(child: SizedBox(width: 50)),4
+        
         const SizedBox(width: 50),
         MusicPlayTab(),
-       // Flexible(child: SizedBox(width: 50)),
        const SizedBox(width: 50),
         Expanded(
           child: MusicSlider(songName: 'On The Ground', singerName: 'Rosé'),
