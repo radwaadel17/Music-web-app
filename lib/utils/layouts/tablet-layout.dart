@@ -17,7 +17,7 @@ class TabletLayout extends StatelessWidget {
             Expanded(flex: 2, child: CustomDrawer()),
             SizedBox(width: 20),
             Expanded(
-              flex: 4,
+              flex: 5,
               child: CustomScrollView(
                 slivers: [
                   SliverToBoxAdapter(

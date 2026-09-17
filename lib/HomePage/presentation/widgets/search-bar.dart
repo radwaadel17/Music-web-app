@@ -14,25 +14,28 @@ class SearchContainer extends StatelessWidget {
         color: ColorsApp.whiteColor.withOpacity(0.8),
         borderRadius: BorderRadius.circular(4.77),
       ),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          SvgPicture.asset(Assets.imagesSearch),
-          SizedBox(width: 10),
-          Expanded(
-            child: TextField(
-              decoration: InputDecoration(
-                hintText: 'Search artists, songs, albums...',
-                border: InputBorder.none,
-                isDense: true,
+      child: Padding(
+        padding: const EdgeInsets.all(5),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            SvgPicture.asset(Assets.imagesSearch),
+            SizedBox(width: 10),
+            Expanded(
+              child: TextField(
+                decoration: InputDecoration(
+                  hintText: 'Search artists, songs, albums...',
+                  border: InputBorder.none,
+                  isDense: true,
+                ),
               ),
             ),
-          ),
-          Container(width: 1.5, height: 25, color: Colors.grey),
-          SizedBox(width: 15),
-          SvgPicture.asset(Assets.imagesGroup),
-          SizedBox(width: 5),
-        ],
+            Container(width: 1.5, height: 25, color: Colors.grey),
+            SizedBox(width: 15),
+            SvgPicture.asset(Assets.imagesGroup),
+            SizedBox(width: 5),
+          ],
+        ),
       ),
     );
   }
