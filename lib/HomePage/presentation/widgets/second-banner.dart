@@ -4,6 +4,7 @@ import 'package:streamingapp/HomePage/presentation/widgets/search-bar.dart';
 import 'package:streamingapp/HomePage/presentation/widgets/track-details-section.dart';
 import 'package:streamingapp/utils/assets.dart';
 import 'package:streamingapp/utils/colors-app.dart';
+import 'package:streamingapp/utils/size-config.dart';
 
 class SecondBannerWidget extends StatelessWidget {
   const SecondBannerWidget({super.key});
@@ -17,14 +18,17 @@ class SecondBannerWidget extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
+     SizeConfig.init(context);
+    var screenWidth = SizeConfig.screenWidth;
     return Column(
+      
       children: [
         SearchContainer(),
         SizedBox(height: 15),
         MusicContentRowList(musicTypes: SecondBannerWidget.musicTypes),
         SizedBox(height: 15),
         AspectRatio(
-          aspectRatio: 1003.58 / 500,
+          aspectRatio: screenWidth <= SizeConfig.tablet ? 1003.58 / 500 : 1003.58 / 453.99,
           child: Container(
             padding: const EdgeInsets.all(10),
             decoration: BoxDecoration(
