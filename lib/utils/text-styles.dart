@@ -281,7 +281,7 @@ class TextAppStyles {
   double scaleFactor = getScaleFactor(context);
   double responsiveFontSize = fontSize * scaleFactor;
   double lowerLimit = fontSize * .8;
-  double upperLimit = fontSize * 1.2;
+  double upperLimit = fontSize * 1;
   return responsiveFontSize.clamp(lowerLimit, upperLimit);
 }
 

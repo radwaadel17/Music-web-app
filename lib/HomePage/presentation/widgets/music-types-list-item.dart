@@ -16,13 +16,10 @@ class MusicTypesListItem extends StatelessWidget {
       child: Center(
         child: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: FittedBox(
-            fit: BoxFit.scaleDown,
-            child: Text(
-              musicType,
-              textAlign: TextAlign.center,
-              style: TextAppStyles.textStyle15Regular(context)
-            ),
+          child: Text(
+            musicType,
+            textAlign: TextAlign.center,
+            style: TextAppStyles.textStyle15Regular(context)
           ),
         ),
       ),

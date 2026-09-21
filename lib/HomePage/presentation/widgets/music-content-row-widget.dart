@@ -6,13 +6,16 @@ class MusicContentRowList extends StatelessWidget {
   final List<String> musicTypes;
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: musicTypes.map((musicType) => Expanded(
-        child: Padding(
-          padding: const EdgeInsets.only( right : 10),
+    
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+        
+        children: musicTypes.map((musicType) => Padding(
+          padding: const EdgeInsets.all(10),
           child: MusicTypesListItem(musicType: musicType),
-        ),
-      )).toList(),
+        )).toList(),
+      ),
     );
   }
 }

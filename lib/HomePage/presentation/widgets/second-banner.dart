@@ -24,7 +24,7 @@ class SecondBannerWidget extends StatelessWidget {
         MusicContentRowList(musicTypes: SecondBannerWidget.musicTypes),
         SizedBox(height: 15),
         AspectRatio(
-          aspectRatio: 1003.58 / 453.99,
+          aspectRatio: 1003.58 / 500,
           child: Container(
             padding: const EdgeInsets.all(10),
             decoration: BoxDecoration(

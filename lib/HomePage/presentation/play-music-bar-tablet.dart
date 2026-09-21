@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:streamingapp/HomePage/presentation/song-playing-info-tab.dart';
-import 'package:streamingapp/HomePage/presentation/widgets/music-control-tab.dart';
 import 'package:streamingapp/utils/colors-app.dart';
 
-class PlayMusicBar extends StatelessWidget {
-  const PlayMusicBar({super.key});
+class PlayMusicBarTablet extends StatelessWidget {
+  const PlayMusicBarTablet({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,11 +17,9 @@ class PlayMusicBar extends StatelessWidget {
       child: Row(
         children: [
           Expanded(flex: 5, child: SongPlayingInfo(songName: 'On The Ground', singerName: 'Rosé',)),
-          Expanded(flex: 2, child: MusicControlTab()),
+          
         ],
       ),
     );
   }
 }
-
-

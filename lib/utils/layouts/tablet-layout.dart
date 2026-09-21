@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:streamingapp/HomePage/presentation/play-music-bar.dart';
+import 'package:streamingapp/HomePage/presentation/play-music-bar-tablet.dart';
 import 'package:streamingapp/HomePage/presentation/widgets/main-content-widget.dart';
 import 'package:streamingapp/HomePage/presentation/widgets/top-stream-and-categories.dart';
 import 'package:streamingapp/utils/widgets/custom-drawer.dart';
